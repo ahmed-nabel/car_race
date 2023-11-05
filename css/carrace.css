@@ -1,0 +1,113 @@
+/* ----------------------------------------- General Styling ---------------------------------------------- */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    
+}
+
+
+/* ----------------------------------------- Start Component ---------------------------------------------- */
+
+/* -------- Start container --------- */
+.container {
+    padding:0 0 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+
+}
+/* -------- End container --------- */
+
+/* --------- Start racebtns -------- */
+.container .raceBtns .btn{
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+.container .raceBtns #start {
+    background-color: rgb(59, 241, 59);
+    
+}
+.container .raceBtns #reset{
+    background-color: rgb(250, 176, 39);
+}
+
+/* --------- End racebtns -------- */
+
+
+/* --------- Start raceTrack -------- */
+.container .raceTrack {
+    width: 100%;
+    height: 300px;
+    background-image: url('../imgs/road.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+   
+
+
+}
+.raceTrack .car{
+    display: block;
+    width: 200px;
+    position: relative;
+
+}
+
+
+
+/* --------- End raceTrack -------- */
+
+/* --------- Start raceResult -------- */
+.container .raceResults {
+    width: 70%;
+    background-color: grey;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    height: 200px;
+    font-size: 1.5rem;
+    
+    
+}
+.container .raceResults h2 {
+    margin: 0;
+    padding: 10px;
+    color: rgb(228, 224, 224);
+    border-bottom: solid 1px rgb(228, 224, 224);
+}
+.container .infoContainer{
+    display: flex;
+    
+}
+.container .infoContainer .raceInfo {
+    flex: 1;
+    padding: 10px;
+}
+.container .infoContainer #carInfo1 {
+    color: rgb(19, 194, 19); 
+}
+.container .infoContainer #carInfo2 {
+    color: rgb(202, 18, 18) ;
+}
+span {
+    display: block;
+    color: white;
+    margin-top: 10px;
+}
+
+/* --------- End raceResult -------- */
